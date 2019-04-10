@@ -1,0 +1,8 @@
+- [x] 单链表反转
+- [x] runtime, JIT-less, V8引擎的执行时编译 JIT特性
+- [x] 看了解释器的预编译过程Â
+        - 创建作用域链
+        - 变量对象
+        - this指向
+- [x] react原理
+     - native 分享issue
