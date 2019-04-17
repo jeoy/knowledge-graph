@@ -2,6 +2,7 @@
 ### 工作
 
 
+
 - 仪表盘跳转
 	- 生成跳转表
 
@@ -18,6 +19,7 @@
 
 - [leetcode](https://leetcode-cn.com/problemset/all/)
 - nodeJs
+- SSR技术   prerender-spa-plugin
 
 ### 项目
 
