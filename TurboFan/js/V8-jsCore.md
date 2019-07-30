@@ -45,6 +45,8 @@
     - 纯解释器模式，用于一些限制访问内存的场景，例如ios，智能电视
 
 
+### webAssembly
+[图说 WebAssembly](https://www.zcfy.cc/article/an-abridged-cartoon-introduction-to-webassembly-ndash-smashing-magazine)
 
 ### 各个引擎之间通用技术
 根据下面关键子去查找，可以了解更多的相关的虚机技术。

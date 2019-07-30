@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <div id="vue1">
+        
+        </div>
+        <div id="vue2">
+        
+        </div>
+    </body>
+</html>
+<script src="./vue.js"></script>
+<script>
+
+
+        let vue1 = new Vue({
+            el: '#vue1',
+            data: { // value: ID 2
+                objzhong: {   // key : id3  value: id4
+                    number1: 111,   // ...5
+                    number2: 222   //   ...6
+                },
+                objzhong2: {  // key:id7  value: id8
+                    number3: 333,
+                    number4: 444
+                }
+            },
+            computed: {
+                aaa() {
+                    return this.objzhong.number1;
+                }
+            },
+            template: `<div>{{objzhong.number1}}{{aaa}}</div>`
+        })
+
+
+
+
+
+</script>
