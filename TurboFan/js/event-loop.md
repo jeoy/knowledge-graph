@@ -17,3 +17,7 @@
 
 
 ### 宏任务(task) &  微任务(job)
+[浏览器与node 的事件循环](https://juejin.im/post/5c337ae06fb9a049bc4cd218)
+
+
+<img src="https://user-gold-cdn.xitu.io/2019/1/12/16841bad1cda741f?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" ></img>
