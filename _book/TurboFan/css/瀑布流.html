@@ -1,0 +1,67 @@
+<body>
+    <style>
+        .parent {
+            width: 100%;
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+        }
+
+        .child {
+            margin-bottom: 20px;
+            -moz-page-break-inside: avoid;
+            -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+            color: #fff;
+        }
+
+        .child:nth-of-type(1) {
+            height: 100px;
+            background: #000;
+        }
+
+        .child:nth-of-type(2) {
+            height: 120px;
+            background: #111;
+        }
+
+        .child:nth-of-type(3) {
+            height: 140px;
+            background: #222;
+        }
+
+        .child:nth-of-type(4) {
+            height: 160px;
+            background: #333;
+        }
+
+        .child:nth-of-type(5) {
+            height: 180px;
+            background: #444;
+        }
+
+        .child:nth-of-type(6) {
+            height: 200px;
+            background: #555;
+        }
+
+        .child:nth-of-type(7) {
+            height: 220px;
+            background: #666;
+        }
+
+        .child:nth-of-type(8) {
+            height: 240px;
+            background: #777;
+        }
+    </style>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+    </div>

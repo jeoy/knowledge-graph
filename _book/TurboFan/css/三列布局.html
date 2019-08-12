@@ -1,0 +1,139 @@
+<!--  中间固定， 左右列自适应。 -->
+<html>
+
+<body>
+    <div class="content1">
+        <div class="left">left</div>
+        <div class="center">flex: 1</div>
+        <div class="right">right</div>
+    </div>
+    <div class="content2">
+        <div class="center2">100% 圣杯布局 float</div>
+        <div class="left2">margin-left -100%  relative   -width</div>
+        <div class="right2">margin-left -fixWidth</div>
+    </div>
+    <div class="content3">
+        <div class="left3"></div>
+        <div class="center3">cal(100% - fix width) </div>
+        <div class="right3"> </div>
+    </div>
+    <div class="content4">
+        <div class="main4">
+            <div class="center4">双飞翼 float + wrapper</div>
+        </div>
+        <div class="left4"></div>
+        <div class="right4"> </div>
+    </div>
+</body>
+
+</html>
+
+<style media="screen">
+    div {
+        height: 100px;
+        text-align: center;
+        color: white;
+    }
+
+    .content1 {
+        display: flex;
+    }
+
+    .center {
+        flex: 1;
+        background: #777;
+    }
+
+    .left {
+        width: 180px;
+        background: #aaa;
+    }
+
+    .right {
+        width: 120px;
+        background: #ccc;
+    }
+
+    .content2 {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 180px;
+        padding-right: 200px;
+    }
+
+    .left2 {
+        float: left;
+        margin-left: -100%;
+        position: relative;
+        width: 180px;
+        left: -180px;
+        background: #aaa;
+    }
+
+    .center2 {
+        float: left;
+        width: 100%;
+        background: #777;
+    }
+
+    .right2 {
+        position: relative;
+        float: left;
+        width: 200px;
+        right: -200px;
+         margin-left: -200px;
+        background: #ccc;
+    }
+
+    .content3 {
+        width: 100%;
+    }
+
+    .left3 {
+        float: left;
+        width: 180px;
+        background: #aaa;
+    }
+
+    .center3 {
+        float: left;
+        width: -moz-calc(100% - 380px);
+        width: -webkit-calc(100% - 380px);
+        width: calc(100% - 380px);
+        background: #777;
+    }
+
+    .right3 {
+        float: left;
+        width: 200px;
+        background: #ccc;
+    }
+
+
+
+
+    .content4 {
+    }
+    .main4 {
+        width: 100%;
+        float: left;
+
+    }
+    .center4 {
+        margin: 0 150px 0 120px;
+        background: #bbb;
+    }
+    .left4{
+        float: left;
+        width: 120px;
+        margin-left: -100%;
+        background: #ccc;
+    }
+
+    .right4 {
+        float: left;
+        width: 150px;
+        margin-left: -150px;
+        background: #aaa;
+    }
+</style>

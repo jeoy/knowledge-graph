@@ -1,0 +1,89 @@
+<!-- 右列定宽，左列自适应。 -->
+<html>
+    <body>
+        <div class="content">
+            <div class="left">
+                flex
+            </div>
+            <div class="right">
+                width  fixed;
+            </div>
+        </div>
+        <div class="content2">
+            <div class="left2">
+                absolute + margin-right
+            </div>
+            <div class="right2">
+                width  fixed;
+            </div>
+        </div>
+        <div class="content2">
+            <div class="left3">
+                float
+                width  fixed;
+            </div>
+            <div class="right3">
+                BFC
+            </div>
+        </div>
+    </body>
+</html>
+
+<style media="screen">
+    .content {
+        display: flex;
+        height: 100px;
+        color: white;
+        text-align: center;
+    }
+    .left {
+        flex: 1;
+        height: 100px;
+        background: #aaa;
+    }
+    .right {
+        width: 120px;
+        height: 100px;
+        background: #bbb;
+    }
+
+    .content2 {
+        height: 100px;
+        color: white;
+        text-align: center;
+    }
+    .left2 {
+        position: absolute;
+        left:0;
+        right: 0;
+        margin-right: 220px;
+        height: 100px;
+        background: #ccc;
+    }
+    .right2 {
+        position: absolute;
+        right: 0;
+        width: 220px;
+        height: 100px;
+        background: #aaa;
+    }
+
+
+    .content2 {
+        color: white;
+        text-align: center;
+    }
+    .left3 {
+        float: left;/*元素脱离文档流，但是内容在文档流中*/
+        width: 100px;
+
+
+        height: 100px;
+        background: #ccc;
+    }
+    .right3 {
+        overflow: hidden;
+        height: 100px;
+        background: #aaa;
+    }
+</style>
