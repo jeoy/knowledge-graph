@@ -6,7 +6,7 @@
     "dependencies": {
         "cz-conventional-changelog": "^2.1.0",
         "ora": "^3.4.0",
-        "shelljs": "^0.8.3"
+        "shelljs": "^0.8.5"
     },
     "devDependencies": {
         "gulp": "^4.0.0",
